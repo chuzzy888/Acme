@@ -1,0 +1,121 @@
+.bg_image {
+    background-image: url('./assets/images/up.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 500px; 
+    /* width: 100%;  */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  }
+  .fon{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .fons{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .cp_image{
+   
+      background-image: url('./assets/images/fp.jpg'); 
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat;
+      height: 350px; 
+      background-color: rgba(0, 0, 0, 0);
+      background-blend-mode: darken;
+      
+  }
+
+  .txt{
+    color: wheat;
+  }
+
+  .bb{
+    background-image: url('./assets/images/header.png'); 
+  }
+
+  .fdi{
+    background-image: url('./assets/images/tp.jpg');
+    background-color: rgba(0, 0, 0, 0.438);
+    background-blend-mode: darken;
+   
+  }
+
+
+
+
+
+
+
+
+
+  /* PAGINATION STYLES */
+
+
+
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    list-style: none;
+  }
+  
+  .page-item {
+    margin: 0 0.5rem;
+  }
+  
+  .page-link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .page-link:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .active .page-link {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+
+
+
+
+
+
+
+
+  .pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 25px 5px;
+}
+
+.pagination li a {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.pagination li.active a {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+
+.pagination li a:hover {
+    background-color: #ddd;
+}
