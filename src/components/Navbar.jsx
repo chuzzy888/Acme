@@ -42,7 +42,7 @@ function Navbar() {
 
   return (
     <>
-      <div className='flex justify-between items-center shadow-md p-5 bg-black text-white lg:sticky lg:top-0'>
+      <div className='flex justify-between items-center shadow-md p-5 bg-black text-white sticky top-0 z-50'>
         <Link to='/'>
           <div><img src={logo} alt="" className='w-32' /></div>
         </Link>

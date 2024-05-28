@@ -7,6 +7,7 @@ import { auth, googleProvider } from '../firebase';
 import { signInWithPopup } from 'firebase/auth';
 import { motion } from 'framer-motion';
 import { toast } from 'react-toastify';
+import hp from '../assets/images/hp.jpg';
 
 function Account() {
   const navigate = useNavigate();
@@ -29,15 +30,18 @@ function Account() {
       exit={{ opacity: 0 }}
       transition={{ opacity: 1.3 }}
     >
-      <div>
-
-        <div className="flex flex-col items-center justify-center min-h-screen bg-zinc-100 px-4 ">
-          <div className="max-w-md w-full space-y-6">
+      <div className='lg:flex lg:justify-around lg:items-center'>
+      <div className='lg:w-1/2 m-8 lg:block hidden'>
+        <img src={hp} alt="" />
+      </div>
+        <div className="flex flex-col items-center justify-center min-h-screen bg-zinc-100 px-4 lg:w-1/2">
+          <div className="max-w-md w-full space-y-6 border border-slate-300 p-10 shadow-xl rounded-3xl">
+            
             <h1 className="text-3xl font-bold mb-4 text-center">Welcome to Acme Blog</h1>
             <p className="mb-8 text-zinc-600 text-center">
               The simplest way to start a blog and share your stories.
             </p>
-            <button className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg transition duration-150 ease-in-out">
+            <button className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-3xl transition duration-150 ease-in-out">
               <Link to='/signup'>
                 Sign up with email
               </Link>
@@ -45,7 +49,7 @@ function Account() {
             <div className="text-center mb-4 text-zinc-500">or</div>
             <button
               onClick={handleGoogleSignIn}
-              className="w-full bg-zinc-300 hover:bg-zinc-400 text-black py-3 rounded-lg mb-6 flex justify-center items-center transition duration-150 ease-in-out shadow-md"
+              className="w-full bg-zinc-300 hover:bg-zinc-400 text-black py-3 rounded-3xl mb-6 flex justify-center items-center transition duration-150 ease-in-out shadow-md"
             >
               <span className="bg-white p-1 mr-2 rounded-full">
                 <img src={lg} alt="Google Logo" className="h-5 w-5" />

@@ -99,6 +99,7 @@ function Home() {
                   <p className="italic ">"I've taken other classes, but this was the best by far..."</p>
                   <p className="font-bold ">Student, Business Analytics</p>
                 </div>
+                
               </>
             )}
           </div>
