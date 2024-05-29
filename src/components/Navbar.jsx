@@ -82,7 +82,7 @@ function Navbar() {
       </div>
       {isOpen && (
         <div className="lg:hidden bg-slate-900 text-white fixed left-0 top-0 w-32 h-96 z-10 overflow-y-auto animate__animated animate__fadeInLeft">
-          <div className="flex flex-col items-center gap-4 mt-4">
+          <div className="flex flex-col items-center gap-4 mt-24">
             <p>Explore</p>
            
               <button className='hover:bg-red-500 hover:text-white text-sm py-1 px-2 rounded-lg bg-blue-700 text-white' onClick={handleLogout}> <IoIosLogOut className='font-black'/></button>
