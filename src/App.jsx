@@ -42,7 +42,7 @@ function App() {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center h-screen animate__animated animate__flash">
+      <div className="flex justify-center items-center h-screen animate__animated animate__flash animate_slow dark:bg-gray-100 overflow-hidden">
         <img src={logo} alt="" className="w-36" />
       </div>
     );

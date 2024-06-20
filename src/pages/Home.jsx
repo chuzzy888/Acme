@@ -43,7 +43,7 @@ function Home() {
     >
       <div className="bg-gray-100">
         <Navbar />
-        <div className="container mx-auto p-4 mt-8">
+        <div className="container mx-auto p-0 mt-8">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-2/3 px-4 mb-8 lg:mb-0 md:h-96 md:overflow-y-scroll">
               <div className="bg-zinc-200 dark:bg-zinc-800 rounded-md overflow-hidden">
@@ -57,11 +57,11 @@ function Home() {
                   />
                 )}
               </div>
-              <h1 className="text-2xl font-bold mt-4">
+              <h1 className="md:text-2xl font-bold mt-4">
                 {loading ? (
                   <Skeleton width={300} />
                 ) : (
-                  "The Future of Web Development: Trends and Insights"
+                  "Welcome to Postwave: Your Ultimate Blogging Companion"
                 )}
               </h1>
               <div className="text-zinc-600 dark:text-zinc-400 flex items-center space-x-2 mt-2">
@@ -69,19 +69,21 @@ function Home() {
                   <Skeleton width={100} />
                 ) : (
                   <>
-                    <span>John Doe</span>
-                    <span className="text-sm">May 15, 2023</span>
+                    {/* <span>John Doe</span> */}
+                    <span className="text-sm">
+                      "Write, edit, and publish with ease."
+                    </span>
                   </>
                 )}
               </div>
-              <p className="mt-2 text-zinc-700 dark:text-zinc-300">
+              <p className="mt-2 text-zinc-700 dark:text-zinc-700 text-sm">
                 {loading ? (
                   <Skeleton count={3} />
                 ) : (
-                  "In this blog post, we explore the latest trends and insights shaping the future of web development. From the rise of headless CMS to the growing importance of accessibility, discover the key developments that will impact the way we build and experience the web."
+                  "Postwave provides a seamless and intuitive platform for bloggers of all levels. With our easy-to-use editor."
                 )}
               </p>
-              <div className="mt-5">
+              <div className="">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
                   {loading ? (
                     Array(3)
@@ -100,7 +102,7 @@ function Home() {
                       ))
                   ) : (
                     <>
-                      <div className="bg-white dark:bg-zinc-900 p-4 rounded-lg shadow-sm flex flex-col justify-center items-center">
+                      {/* <div className="bg-white dark:bg-zinc-900 p-4 rounded-lg shadow-sm flex flex-col justify-center items-center">
                         <img
                           src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=600"
                           className="w-10 h-10 rounded-full mb-2"
@@ -131,7 +133,7 @@ function Home() {
                             Entertainment
                           </h2>
                         </div>
-                      </div>
+                      </div> */}
                     </>
                   )}
                 </div>
@@ -148,7 +150,7 @@ function Home() {
                       ))
                   ) : (
                     <>
-                      <div>
+                      {/* <div>
                         <h3 className="text-zinc-700 dark:text-zinc-300 font-semibold">
                           The Aarthi and Sriram Show
                         </h3>
@@ -196,7 +198,7 @@ function Home() {
                           incidents of the last few weeks and what it means for
                           decentralization and credibly neutral mechanisms.
                         </p>
-                      </div>
+                      </div> */}
                     </>
                   )}
                 </div>
@@ -204,23 +206,23 @@ function Home() {
             </div>
 
             <div className="lg:w-1/3 px-4 space-y-8 ">
-              <div className="bg-white dark:bg-zinc-900 rounded-md p-4 shadow">
+              <div className="bg-white  rounded-md p-4 shadow ">
                 <h2 className="text-xl font-bold mb-2">
                   {loading ? <Skeleton width={100} /> : "Search"}
                 </h2>
-                <div className="relative">
+                <div className="relative ">
                   {loading ? (
                     <Skeleton height={36} />
                   ) : (
                     <>
                       <input
                         type="text"
-                        className="w-full p-2 border rounded dark:bg-zinc-700 dark:border-zinc-600"
+                        className="w-full p-2 border rounded "
                         placeholder="Search blog posts..."
                       />
                       <button className="absolute right-2 top-2">
                         <svg
-                          className="w-5 h-5 text-zinc-600 dark:text-zinc-300"
+                          className="w-5 h-5 text-zinc-600 "
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -239,59 +241,49 @@ function Home() {
                 </div>
               </div>
 
-              <div className="bg-white dark:bg-zinc-900 rounded-md p-4 shadow">
+              <div className="bg-white  rounded-md p-4 shadow">
                 <h2 className="text-xl font-bold mb-2">
                   {loading ? <Skeleton width={120} /> : "Categories"}
                 </h2>
-                <ul className="space-y-2">
-                  {loading ? (
-                    Array(4)
-                      .fill()
-                      .map((_, index) => (
-                        <li key={index}>
-                          <Skeleton width={150} />
+                <div>
+                  <ul className="space-y-2">
+                    {loading ? (
+                      Array(4)
+                        .fill()
+                        .map((_, index) => (
+                          <li key={index}>
+                            <Skeleton width={150} />
+                          </li>
+                        ))
+                    ) : (
+                      <>
+                        <li>
+                          <a href="#" className="text-blue-500 ">
+                            Politics{" "}
+                          </a>
                         </li>
-                      ))
-                  ) : (
-                    <>
-                      <li>
-                        <a
-                          href="#"
-                          className="text-blue-500 dark:text-blue-400"
-                        >
-                          Web Development
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="text-blue-500 dark:text-blue-400"
-                        >
-                          Design
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="text-blue-500 dark:text-blue-400"
-                        >
-                          Technology
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="text-blue-500 dark:text-blue-400"
-                        >
-                          Entrepreneurship
-                        </a>
-                      </li>
-                    </>
-                  )}
-                </ul>
+                        <li>
+                          <a href="#" className="text-blue-500 ">
+                            Design
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" className="text-blue-500 ">
+                            Sport
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" className="text-blue-500 ">
+                            Career
+                          </a>
+                        </li>
+                      </>
+                    )}
+                  </ul>
+                </div>
               </div>
 
-              <div className="bg-white dark:bg-zinc-900 rounded-md p-4 shadow">
+              <div className="bg-white rounded-md p-4 shadow">
                 <h2 className="text-xl font-bold mb-2">
                   {loading ? <Skeleton width={150} /> : "Popular Posts"}
                 </h2>
@@ -321,10 +313,10 @@ function Home() {
                             alt="Popular Post 1 Image Placeholder"
                           />
                           <div>
-                            <h3 className="text-md font-semibold">
+                            <h3 className="md:text-md text-xs font-semibold">
                               {post.title}
                             </h3>
-                            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                            <p className="md:text-sm text-xs text-zinc-600">
                               {post.post}
                             </p>
                           </div>

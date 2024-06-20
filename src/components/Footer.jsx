@@ -185,7 +185,7 @@ function Footer() {
           </div>
           <div className="mt-8 border-t border-zinc-200 dark:border-zinc-700 pt-8">
             <div className="flex justify-between items-center">
-              <div className="flex space-x-4">
+              <div className="flex space-x-4  dark:text-zinc-300">
                 <a href="#" undefinedlabel="Facebook">
                   <FaFacebookF />
                 </a>

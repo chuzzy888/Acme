@@ -31,7 +31,7 @@ function Account() {
       exit={{ opacity: 0 }}
       transition={{ opacity: 1.3 }}
     >
-      <div className="min-h-screen flex  items-center justify-center bg-zinc-100 p-5">
+      <div className="min-h-screen flex  items-center justify-center bg-zinc-100 p-3 ">
         <div className="flex md:flex-row flex-col  rounded-lg shadow overflow-hidden w-full max-w-4xl">
           <div className="md:w-1/2 bg-zinc-100 flex items-center justify-center">
             {/* <img src={hp} alt="" /> */}
@@ -43,8 +43,8 @@ function Account() {
           </div>
           <div className="">
             <div className="max-w-md w-full space-y-6 border border-slate-300 p-10 ">
-              <h1 className="text-3xl font-bold mb-4 text-center">
-                Welcome to Acme Blog
+              <h1 className="md:text-3xl text-lg font-bold mb-4 text-center">
+                Welcome to <span className="text-blue-500">Post</span>wave
               </h1>
               <p className="mb-8 text-zinc-600 text-center">
                 The simplest way to start a blog and share your stories.

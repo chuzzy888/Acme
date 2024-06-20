@@ -90,10 +90,8 @@ function Navbar() {
           </button>
         </div>
         {isOpen && (
-          <div className="lg:hidden bg-slate-900 text-white fixed left-0 top-0 w-32 h-96 z-10 overflow-y-auto animate__animated animate__fadeInLeft">
-            <div className="flex flex-col items-center gap-4 mt-24">
-              <p>Explore</p>
-
+          <div className="lg:hidden bg-slate-900 text-white fixed left-0 top-2 w-32 py-8   z-10 overflow-x-auto animate__animated animate__fadeInLeft">
+            <div className="flex flex-col items-center gap-4 ">
               <button
                 className="hover:bg-red-500 hover:text-white text-sm py-1 px-2 rounded-lg bg-blue-700 text-white"
                 onClick={handleLogout}
@@ -103,11 +101,11 @@ function Navbar() {
               </button>
 
               <Link to="/categories">
-                <p>Tags</p>
+                <p className="underline">Blogs</p>
               </Link>
               <Link to="/create">
-                <button className="hover:text-green-500  p-1  text-lg shadow-md">
-                  <FaEdit />
+                <button className="bg-gray-200 hover:bg-gray-300  px-3 p-1 text-black text-sm rounded ">
+                  write
                 </button>
               </Link>
               <Link to="/account">
@@ -127,7 +125,6 @@ function Navbar() {
           </div>
         )}
       </div>
-      <hr className="md:mx-16 mx-2" />
     </>
   );
 }
