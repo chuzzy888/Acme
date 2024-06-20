@@ -203,7 +203,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="lg:w-1/3 px-4 space-y-8">
+            <div className="lg:w-1/3 px-4 space-y-8 ">
               <div className="bg-white dark:bg-zinc-900 rounded-md p-4 shadow">
                 <h2 className="text-xl font-bold mb-2">
                   {loading ? <Skeleton width={100} /> : "Search"}
